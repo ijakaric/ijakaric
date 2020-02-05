@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.site-footer {
+	padding: 40px 0 32px;
+}
+.site-footer img {
+	@include mq($phone) {
+		margin: auto;
+		padding-bottom: 45px;
+	}
+}
+.site-footer .nav-item {
+	margin: 0 23.5px;
+	
+	@include mq($phone) {
+		text-align: center;
+		margin: 15px 0;
+	}
+}
+.copyright {
+	padding-top: 45px;
+	text-align: center;
+
+	span {
+		color: $black;
+		opacity: 40%;
+		font-size: 14px;
+	}
+}

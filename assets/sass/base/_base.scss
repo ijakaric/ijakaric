@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+## Base Layout
+--------------------------------------------------------------*/
+html, body {
+	@include font-smoothing(antialiased);
+	height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+main {
+	background-color: $gray;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.container--small {
+	max-width: 713px;
+	margin: auto;
+}

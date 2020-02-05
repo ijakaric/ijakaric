@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+## Fonts
+--------------------------------------------------------------*/
+
+
+@font-face {
+    font-family: "CircularStd-Black";
+    src: url("./assets/fonts/CircularStd-Black.woff2") format("woff2"), url("./assets/fonts/CircularStd-Black.woff") format("woff"), url("./assets/fonts/CircularStd-Black.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "CircularStd-Bold";
+    src: url("./assets/fonts/CircularStd-Bold.woff2") format("woff2"), url("./assets/fonts/CircularStd-Bold.woff") format("woff"), url("./assets/fonts/CircularStd-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "CircularStd-Book";
+    src: url("./assets/fonts/CircularStd-Book.woff2") format("woff2"), url("./assets/fonts/CircularStd-Book.woff") format("woff"), url("./assets/fonts/CircularStd-Book.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "CircularStd-Medium";
+    src: url("./assets/fonts/CircularStd-Medium.woff2") format("woff2"), url("/assets/fonts/CircularStd-Medium.woff") format("woff"), url("/assets/fonts/CircularStd-Medium.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}

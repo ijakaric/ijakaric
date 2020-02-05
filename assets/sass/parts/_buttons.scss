@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+
+.btn {
+    color: $blue;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    border: none;
+    background-color: transparent;
+
+    .font-arrow {
+        margin-right: 18px;
+        font-size: 8px;
+        color: $blue;
+    }
+}
+
+
