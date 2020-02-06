@@ -10,8 +10,8 @@
     }
 }
 .work {
+    padding: 0 15px;
     @include mq($phone) {
-        padding: 0 15px;
         margin-bottom: 65px;
     }
 

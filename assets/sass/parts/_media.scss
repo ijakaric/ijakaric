@@ -93,3 +93,23 @@ img {
 	display: block;
 	height: initial;
 }
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+
+.slick-arrow {
+	background: transparent;
+	border: none;
+	z-index: 10;
+	
+	span {
+		font-size: 46px;
+		transition: $dur $ease;
+		&:hover,
+		&:focus {
+			color: $blue;
+			outline: none;
+		}
+	}
+}

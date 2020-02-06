@@ -58,7 +58,9 @@ a {
 		position: relative;
 		float: left;
 		// transition: $dur $ease;
-		margin-bottom: 33px;
+		// margin-bottom: 33px;
+		line-height: 60px;
+		font-family: $font-title;
 
 		&:hover > a,
 		&.focus > a {
@@ -72,7 +74,8 @@ a {
 		color: $black;
 		padding: 20px 15px;
 		@include fluid-type(36px, 56px, 375px, 1440px);
-
+		font-family: $font-title;
+		
 		&:hover {
 			color: $blue;
 		}

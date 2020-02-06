@@ -364,7 +364,7 @@ td {
   src: url("assets/icons/fonticons.woff2") format("woff2"), url("assets/icons/fonticons.woff") format("woff"), url("assets/icons/fonticons.ttf") format("truetype");
 }
 
-.font-arrow-back-ios:before, .font-arrow-forward-ios:before, .font-arrow-left:before, .font-arrow-right:before, .font-arrow:before, .font-behance:before, .font-close:before, .font-hamburger:before, .font-instagram:before, .font-keyboard-arrow-left:before, .font-keyboard-arrow-right:before, .font-linkedIn:before, .font-upwork:before {
+.font-arrow-back-ios:before, .font-arrow-forward-ios:before, .font-arrow-left-s-line:before, .font-arrow-left:before, .font-arrow-right-s-line:before, .font-arrow-right:before, .font-arrow:before, .font-behance:before, .font-close:before, .font-hamburger:before, .font-instagram:before, .font-keyboard-arrow-left:before, .font-keyboard-arrow-right:before, .font-linkedIn:before, .font-upwork:before {
   font-family: "fonticons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -383,48 +383,56 @@ td {
   content: "";
 }
 
-.font-arrow-left:before {
+.font-arrow-left-s-line:before {
   content: "";
 }
 
-.font-arrow-right:before {
+.font-arrow-left:before {
   content: "";
 }
 
-.font-arrow:before {
+.font-arrow-right-s-line:before {
   content: "";
 }
 
-.font-behance:before {
+.font-arrow-right:before {
   content: "";
 }
 
-.font-close:before {
+.font-arrow:before {
   content: "";
 }
 
-.font-hamburger:before {
+.font-behance:before {
   content: "";
 }
 
-.font-instagram:before {
+.font-close:before {
   content: "";
 }
 
-.font-keyboard-arrow-left:before {
+.font-hamburger:before {
   content: "";
 }
 
-.font-keyboard-arrow-right:before {
+.font-instagram:before {
   content: "";
 }
 
-.font-linkedIn:before {
+.font-keyboard-arrow-left:before {
   content: "";
 }
 
-.font-upwork:before {
+.font-keyboard-arrow-right:before {
   content: "";
+}
+
+.font-linkedIn:before {
+  content: "";
+}
+
+.font-upwork:before {
+  content: "";
 }
 
 /*--------------------------------------------------------------
@@ -3178,8 +3186,8 @@ h2 {
 }
 
 h3 {
-  font-size: -webkit-calc(30px + 10 * ( (100vw - 375px) / 1065));
-  font-size: calc(30px + 10 * ( (100vw - 375px) / 1065));
+  font-size: -webkit-calc(30px + -6 * ( (100vw - 375px) / 1065));
+  font-size: calc(30px + -6 * ( (100vw - 375px) / 1065));
 }
 
 @media screen and (max-width: 375px) {
@@ -3190,7 +3198,7 @@ h3 {
 
 @media screen and (min-width: 1440px) {
   h3 {
-    font-size: 40px;
+    font-size: 24px;
   }
 }
 
@@ -3503,6 +3511,26 @@ img {
   height: initial;
 }
 
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.slick-arrow {
+  background: transparent;
+  border: none;
+  z-index: 10;
+}
+
+.slick-arrow span {
+  font-size: 46px;
+  -webkit-transition: 350ms ease;
+  -o-transition: 350ms ease;
+  transition: 350ms ease;
+}
+
+.slick-arrow span:hover {
+  color: #0023F9;
+}
+
 .list {
   margin-bottom: 60px;
 }
@@ -3541,6 +3569,7 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .socials__link {
@@ -3790,7 +3819,8 @@ a:hover, a:focus, a:active {
 .main-navigation li {
   position: relative;
   float: left;
-  margin-bottom: 33px;
+  line-height: 60px;
+  font-family: CircularStd-Bold;
 }
 
 .main-navigation li:hover > a,
@@ -3805,6 +3835,7 @@ a:hover, a:focus, a:active {
   padding: 20px 15px;
   font-size: -webkit-calc(36px + 20 * ( (100vw - 375px) / 1065));
   font-size: calc(36px + 20 * ( (100vw - 375px) / 1065));
+  font-family: CircularStd-Bold;
 }
 
 @media screen and (max-width: 375px) {
@@ -4124,9 +4155,12 @@ a:hover, a:focus, a:active {
   }
 }
 
+.work {
+  padding: 0 15px;
+}
+
 @media screen and (max-width: 640px) {
   .work {
-    padding: 0 15px;
     margin-bottom: 65px;
   }
 }
