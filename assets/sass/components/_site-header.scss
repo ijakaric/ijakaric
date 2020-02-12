@@ -6,13 +6,17 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 28px 15px;
-	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	min-height: 60px;
 	z-index: 10;
-	background-color: rgba($gray, .7);
+	transition: $dur $ease;
+	position: fixed;
+
+	.fixed-nav & {
+		background-color: rgba($gray, .7);
+	}
 }
 
 .site-branding a {
