@@ -5,9 +5,16 @@
     }
 }
 .featured-works__title {
+    margin-top: 9px;
+    margin-bottom: 25px;
     @include mq($phone) {
         margin-bottom: 15px;
     }
+}
+
+.featured-works__text {
+    max-width: 469px;
+    margin-bottom: 36px;
 }
 .work {
     padding: 0 15px;

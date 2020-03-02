@@ -4540,10 +4540,20 @@ a:hover, a:focus, a:active {
   }
 }
 
+.featured-works__title {
+  margin-top: 9px;
+  margin-bottom: 25px;
+}
+
 @media screen and (max-width: 640px) {
   .featured-works__title {
     margin-bottom: 15px;
   }
+}
+
+.featured-works__text {
+  max-width: 469px;
+  margin-bottom: 36px;
 }
 
 .work {
