@@ -23,3 +23,22 @@ jQuery(function($) {
   }
 
   window.addEventListener('scroll', fixNav);
+
+
+// 
+  const swup = new Swup(); // only this line when included with script tag
+
+
+  $(document).ready(function() {
+	$('.has-animation').each(function(index) {
+	  $(this).delay($(this).data('delay')).queue(function(){
+		$(this).addClass('animate-in');
+	  });
+	});
+  });
+  
+
+
+
+  
+  new WOW().init();

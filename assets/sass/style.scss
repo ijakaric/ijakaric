@@ -70,6 +70,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 @import 'base/typography';
 @import 'base/base';
 @import 'base/layout';
+@import 'base/swup-animations';
 
 /*--------------------------------------------------------------
 # Parts
@@ -93,3 +94,4 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 @import 'components/component-testemonials';
 @import 'components/component-contact';
 @import 'components/component-service';
+@import 'components/component-case-study';

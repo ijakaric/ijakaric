@@ -24,6 +24,10 @@
     justify-content: center;
     cursor: pointer;
 
+    &:hover span {
+        color: $blue;
+    }
+
 }
 
 .socials__link {

@@ -1,0 +1,50 @@
+.project-info {
+    padding: 100px 0;
+}
+.design {
+    padding: 74px 0;
+}
+.design__text {
+    max-width: 500px;
+}
+.development {
+    padding: 74px 0;
+}
+.development__text {
+    max-width: 500px;
+}
+.typography {
+    padding: 100px 0;
+}
+.typography__title {
+    margin-bottom: 16px;
+}
+
+.typography__preview {
+    padding: 91px 0 41px;
+}
+
+.color-section {
+    padding-bottom: 130px;
+}
+
+.color__title {
+    margin-bottom: 74px;
+}
+.color-border {
+    background: $dark-gray;
+    border-radius: 100%;
+    width: 201px;
+    height: 201px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-body {
+    width: 177px;
+    height: 177px;
+    background: $dark-gray;
+    border-radius: 100%;
+    border: 12px solid white;
+}
