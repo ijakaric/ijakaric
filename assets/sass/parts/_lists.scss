@@ -57,6 +57,10 @@
     bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
+
+    @include mq($phone) {
+        bottom: -75px;
+    }
 }
 .socials--menu span {
     color: $black;

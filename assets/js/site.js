@@ -6,6 +6,10 @@ jQuery(function($) {
 	// Slick Slider
 	const sliders = require('./_site/sliders');
 	sliders.init();
+
+	// Slick Slider
+	const smoothScroll = require('./_site/smoothScroll');
+	smoothScroll.init();
 });
 
   // Not a ton of code, but hard to

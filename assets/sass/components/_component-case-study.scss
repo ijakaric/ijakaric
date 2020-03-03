@@ -21,7 +21,7 @@
 }
 
 .typography__preview {
-    padding: 91px 0 41px;
+    padding: 91px 15px 41px;
 }
 
 .color-section {
@@ -39,6 +39,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mq($phone) {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .color-body {
@@ -47,4 +52,12 @@
     background: $dark-gray;
     border-radius: 100%;
     border: 12px solid white;
+
+    @include mq($phone) {
+        width: 80px;
+        height: 80px;
+        background: #939393;
+        border-radius: 100%;
+        border: 6px solid white;
+    }
 }
