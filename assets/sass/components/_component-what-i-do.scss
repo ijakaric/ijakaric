@@ -1,6 +1,22 @@
+.overview__title {
+    margin-bottom: 7px;
+}
+
 .service {
     overflow: hidden;
     padding: 54px 0 74px 0;
+
+    @include mq($phone) {
+        padding: 20px 0 74px 0;
+    }
+}
+
+.service--reverse {
+    padding: 53px 0 226px;
+    
+    @include mq($phone) {
+        padding: 20px 0 74px 0;
+    }
 }
 
 .service__image {
@@ -34,6 +50,3 @@
     }
 }
 
-.service--reverse {
-    padding: 53px 0 226px;
-}
