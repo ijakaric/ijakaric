@@ -3111,7 +3111,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #000;
+  color: #252B2B;
   font-family: CircularStd-Medium;
   font-size: 18px;
   line-height: 1.35;
@@ -3145,7 +3145,7 @@ p {
 
 p.small {
   font-size: 16px;
-  color: #000;
+  color: #252B2B;
 }
 
 h1.display {
@@ -3243,7 +3243,7 @@ blockquote {
 }
 
 pre {
-  background: #000;
+  background: #252B2B;
   max-width: 100%;
   overflow: auto;
   padding: 1.6em;
@@ -3262,7 +3262,7 @@ pre {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #000;
+  color: #252B2B;
   font-size: 30px;
   line-height: 1;
 }
@@ -3788,32 +3788,32 @@ html.is-animating .transition-fade {
 }
 
 ::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(37, 43, 43, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
 
 ::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(37, 43, 43, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
 
 :-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(37, 43, 43, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
 
 ::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(37, 43, 43, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
 
 ::placeholder,
 .custom-select {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(37, 43, 43, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
@@ -4031,16 +4031,12 @@ img {
 }
 
 .socials--footer span {
-  color: #000;
+  color: #252B2B;
 }
 
 .socials--menu {
   position: absolute;
-  bottom: 25px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin-top: 49px;
 }
 
 @media screen and (max-width: 640px) {
@@ -4050,7 +4046,7 @@ img {
 }
 
 .socials--menu span {
-  color: #000;
+  color: #252B2B;
 }
 
 /*--------------------------------------------------------------
@@ -4084,6 +4080,12 @@ img {
   position: fixed;
 }
 
+@media screen and (max-width: 640px) {
+  .site-header {
+    padding: 19px 0 12px;
+  }
+}
+
 .fixed-nav .site-header {
   background-color: rgba(246, 246, 246, 0.7);
 }
@@ -4110,7 +4112,7 @@ img {
   height: 3px;
   position: absolute;
   display: block;
-  background-color: #000;
+  background-color: #252B2B;
 }
 
 .menu-btn::after, .menu-btn::before {
@@ -4142,7 +4144,7 @@ img {
 
 .menu-btn span::before {
   content: '';
-  background-color: #000;
+  background-color: #252B2B;
   width: 100%;
   height: 3px;
   position: absolute;
@@ -4276,7 +4278,7 @@ a:hover, a:focus, a:active {
 .main-navigation .menu-item a {
   display: block;
   text-decoration: none;
-  color: #000;
+  color: #252B2B;
   padding: 20px 15px;
   font-size: -webkit-calc(36px + 20 * ( (100vw - 375px) / 1065));
   font-size: calc(36px + 20 * ( (100vw - 375px) / 1065));
@@ -4320,6 +4322,10 @@ a:hover, a:focus, a:active {
   transition: 350ms ease 10ms;
 }
 
+.main-navigation address {
+  margin-top: 148px;
+}
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
@@ -4351,7 +4357,7 @@ a:hover, a:focus, a:active {
 }
 
 .copyright span {
-  color: #000;
+  color: #252B2B;
   opacity: 40%;
   font-size: 14px;
 }
@@ -4372,7 +4378,7 @@ a:hover, a:focus, a:active {
 .entry-content h6 {
   line-height: 1.35;
   margin-bottom: 15px;
-  color: #000;
+  color: #252B2B;
 }
 
 .entry-content h2 {
@@ -4403,7 +4409,7 @@ a:hover, a:focus, a:active {
 
 .entry-content p strong {
   font-weight: 400;
-  color: #000;
+  color: #252B2B;
 }
 
 .entry-content li {
@@ -4449,7 +4455,7 @@ a:hover, a:focus, a:active {
   bottom: 0;
   height: 1px;
   width: 0;
-  background: #000;
+  background: #252B2B;
   -webkit-transition: 350ms ease;
   -o-transition: 350ms ease;
   transition: 350ms ease;
@@ -4461,7 +4467,7 @@ a:hover, a:focus, a:active {
 
 .entry-content table {
   border-collapse: collapse;
-  color: #000;
+  color: #252B2B;
   margin: 25px 0 35px;
   overflow-x: visible;
   table-layout: fixed;
@@ -4497,14 +4503,14 @@ a:hover, a:focus, a:active {
 }
 
 .entry-content th {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #252B2B;
   font-weight: 400;
   padding-bottom: 8px;
-  color: #000;
+  color: #252B2B;
 }
 
 .entry-content td {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #252B2B;
   padding: 20px 0 5px;
 }
 
@@ -4729,7 +4735,7 @@ a:hover, a:focus, a:active {
 }
 
 .get-in-touch a:hover {
-  color: #000;
+  color: #252B2B;
 }
 
 .testemonials {

@@ -54,9 +54,7 @@
 
 .socials--menu {
     position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 49px;
 
     @include mq($phone) {
         bottom: -75px;
