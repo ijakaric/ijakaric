@@ -38,6 +38,9 @@
 .c-white {
 	color: $white;
 }
+.c-black	 {
+	color: $black;
+}
 .bg-blue {
 	background-color: $blue;
 }
@@ -86,4 +89,9 @@
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
 	display: block;
+}
+
+.small-caps {
+	font-variant-caps: small-caps;
+	letter-spacing: 2px;
 }

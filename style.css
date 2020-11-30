@@ -356,6 +356,22 @@ td {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Maison Neue Extended";
+  src: url("./assets/fonts/MaisonNeue-ExtendedBold.woff2") format("woff2"), url("./assets/fonts/MaisonNeue-ExtendedBold.woff") format("woff"), url("./assets/fonts/MaisonNeue-ExtendedBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("./assets/fonts/Aeonik-Regular.woff2") format("woff2"), url("./assets/fonts/Aeonik-Regular.woff") format("woff"), url("./assets/fonts/Aeonik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*--------------------------------------------------------------
 ## Variables
 --------------------------------------------------------------*/
@@ -506,6 +522,10 @@ td {
   color: #fff;
 }
 
+.c-black {
+  color: #000940;
+}
+
 .bg-blue {
   background-color: #0023F9;
 }
@@ -557,6 +577,11 @@ td {
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
   display: block;
+}
+
+.small-caps {
+  font-variant-caps: small-caps;
+  letter-spacing: 2px;
 }
 
 /*--------------------------------------------------------------
@@ -3111,16 +3136,17 @@ input,
 select,
 optgroup,
 textarea {
-  color: #252B2B;
-  font-family: CircularStd-Medium;
+  color: #000940;
+  font-family: Aeonik;
   font-size: 18px;
   line-height: 1.35;
 }
 
 p {
-  color: #939393;
+  color: #000940;
   margin-bottom: 25px;
   line-height: 28px;
+  letter-spacing: 0.1px;
   font-size: -webkit-calc(16px + 2 * ( (100vw - 375px) / 1065));
   font-size: calc(16px + 2 * ( (100vw - 375px) / 1065));
 }
@@ -3145,14 +3171,16 @@ p {
 
 p.small {
   font-size: 16px;
-  color: #252B2B;
+  color: #000940;
+  letter-spacing: 0.1px;
+  line-height: 24px;
 }
 
 h1.display {
   font-size: -webkit-calc(46px + 10 * ( (100vw - 375px) / 1065));
   font-size: calc(46px + 10 * ( (100vw - 375px) / 1065));
   margin-bottom: 20px;
-  font-family: CircularStd-Bold;
+  font-family: MaisonNeue-ExtendedBold;
 }
 
 @media screen and (max-width: 375px) {
@@ -3168,7 +3196,7 @@ h1.display {
 }
 
 h2 {
-  font-family: CircularStd-Bold;
+  font-family: MaisonNeue-ExtendedBold;
   font-size: -webkit-calc(30px + 10 * ( (100vw - 375px) / 1065));
   font-size: calc(30px + 10 * ( (100vw - 375px) / 1065));
 }
@@ -3186,6 +3214,7 @@ h2 {
 }
 
 h3 {
+  font-family: MaisonNeue-ExtendedBold;
   font-size: -webkit-calc(30px + -6 * ( (100vw - 375px) / 1065));
   font-size: calc(30px + -6 * ( (100vw - 375px) / 1065));
 }
@@ -3203,7 +3232,7 @@ h3 {
 }
 
 h4 {
-  font-family: CircularStd-Bold;
+  font-family: MaisonNeue-ExtendedBold;
   font-size: -webkit-calc(14px + 4 * ( (100vw - 375px) / 1065));
   font-size: calc(14px + 4 * ( (100vw - 375px) / 1065));
 }
@@ -3243,7 +3272,7 @@ blockquote {
 }
 
 pre {
-  background: #252B2B;
+  background: #000940;
   max-width: 100%;
   overflow: auto;
   padding: 1.6em;
@@ -3262,7 +3291,7 @@ pre {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #252B2B;
+  color: #000940;
   font-size: 30px;
   line-height: 1;
 }
@@ -3788,32 +3817,32 @@ html.is-animating .transition-fade {
 }
 
 ::-webkit-input-placeholder {
-  color: rgba(37, 43, 43, 0.5);
+  color: rgba(0, 9, 64, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
 
 ::-moz-placeholder {
-  color: rgba(37, 43, 43, 0.5);
+  color: rgba(0, 9, 64, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
 
 :-ms-input-placeholder {
-  color: rgba(37, 43, 43, 0.5);
+  color: rgba(0, 9, 64, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
 
 ::-ms-input-placeholder {
-  color: rgba(37, 43, 43, 0.5);
+  color: rgba(0, 9, 64, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
 
 ::placeholder,
 .custom-select {
-  color: rgba(37, 43, 43, 0.5);
+  color: rgba(0, 9, 64, 0.5);
   font-size: 16px;
   line-height: 24px;
 }
@@ -4031,7 +4060,7 @@ img {
 }
 
 .socials--footer span {
-  color: #252B2B;
+  color: #000940;
 }
 
 .socials--menu {
@@ -4046,7 +4075,7 @@ img {
 }
 
 .socials--menu span {
-  color: #252B2B;
+  color: #000940;
 }
 
 /*--------------------------------------------------------------
@@ -4112,7 +4141,7 @@ img {
   height: 3px;
   position: absolute;
   display: block;
-  background-color: #252B2B;
+  background-color: #000940;
 }
 
 .menu-btn::after, .menu-btn::before {
@@ -4144,7 +4173,7 @@ img {
 
 .menu-btn span::before {
   content: '';
-  background-color: #252B2B;
+  background-color: #000940;
   width: 100%;
   height: 3px;
   position: absolute;
@@ -4267,7 +4296,7 @@ a:hover, a:focus, a:active {
 
 .main-navigation li {
   line-height: 60px;
-  font-family: CircularStd-Bold;
+  font-family: MaisonNeue-ExtendedBold;
 }
 
 .main-navigation li:hover > a,
@@ -4278,11 +4307,11 @@ a:hover, a:focus, a:active {
 .main-navigation .menu-item a {
   display: block;
   text-decoration: none;
-  color: #252B2B;
+  color: #000940;
   padding: 20px 15px;
   font-size: -webkit-calc(36px + 20 * ( (100vw - 375px) / 1065));
   font-size: calc(36px + 20 * ( (100vw - 375px) / 1065));
-  font-family: CircularStd-Bold;
+  font-family: MaisonNeue-ExtendedBold;
 }
 
 @media screen and (max-width: 375px) {
@@ -4357,7 +4386,7 @@ a:hover, a:focus, a:active {
 }
 
 .copyright span {
-  color: #252B2B;
+  color: #000940;
   opacity: 40%;
   font-size: 14px;
 }
@@ -4378,7 +4407,7 @@ a:hover, a:focus, a:active {
 .entry-content h6 {
   line-height: 1.35;
   margin-bottom: 15px;
-  color: #252B2B;
+  color: #000940;
 }
 
 .entry-content h2 {
@@ -4409,7 +4438,7 @@ a:hover, a:focus, a:active {
 
 .entry-content p strong {
   font-weight: 400;
-  color: #252B2B;
+  color: #000940;
 }
 
 .entry-content li {
@@ -4455,7 +4484,7 @@ a:hover, a:focus, a:active {
   bottom: 0;
   height: 1px;
   width: 0;
-  background: #252B2B;
+  background: #000940;
   -webkit-transition: 350ms ease;
   -o-transition: 350ms ease;
   transition: 350ms ease;
@@ -4467,7 +4496,7 @@ a:hover, a:focus, a:active {
 
 .entry-content table {
   border-collapse: collapse;
-  color: #252B2B;
+  color: #000940;
   margin: 25px 0 35px;
   overflow-x: visible;
   table-layout: fixed;
@@ -4503,14 +4532,14 @@ a:hover, a:focus, a:active {
 }
 
 .entry-content th {
-  border-bottom: 2px solid #252B2B;
+  border-bottom: 2px solid #000940;
   font-weight: 400;
   padding-bottom: 8px;
-  color: #252B2B;
+  color: #000940;
 }
 
 .entry-content td {
-  border-bottom: 1px solid #252B2B;
+  border-bottom: 1px solid #000940;
   padding: 20px 0 5px;
 }
 
@@ -4545,6 +4574,12 @@ a:hover, a:focus, a:active {
   background-image: -o-linear-gradient(top, rgba(246, 246, 246, 0.25) 0%, #F6F6F6 96.92%), url("./assets/images/what-i-do.jpg");
   background-image: linear-gradient(180deg, rgba(246, 246, 246, 0.25) 0%, #F6F6F6 96.92%), url("./assets/images/what-i-do.jpg");
   background-size: cover;
+}
+
+.banner-what-i-do--dolphin {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 246, 246, 0.25)), color-stop(96.92%, #EEF7FA)), url("./assets/images/what-i-do.jpg");
+  background-image: -o-linear-gradient(top, rgba(246, 246, 246, 0.25) 0%, #EEF7FA 96.92%), url("./assets/images/what-i-do.jpg");
+  background-image: linear-gradient(180deg, rgba(246, 246, 246, 0.25) 0%, #EEF7FA 96.92%), url("./assets/images/what-i-do.jpg");
 }
 
 .banner-my-work {
@@ -4600,12 +4635,13 @@ a:hover, a:focus, a:active {
 }
 
 .work__box {
-  color: #fff;
+  background-color: #f6f4fa;
   padding: 0;
-  max-width: 297px;
-  margin-bottom: 85px;
+  margin-bottom: 30px;
   height: 360px;
   overflow: hidden;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
 
 .work__box:hover .btn {
@@ -4626,36 +4662,6 @@ a:hover, a:focus, a:active {
   }
 }
 
-.work__box:nth-of-type(odd) {
-  margin-top: -95px;
-}
-
-@media screen and (max-width: 640px) {
-  .work__box:nth-of-type(odd) {
-    margin-top: 0;
-  }
-}
-
-.work__box:nth-of-type(2) {
-  margin-top: 95px;
-}
-
-@media screen and (max-width: 640px) {
-  .work__box:nth-of-type(2) {
-    margin-top: 0;
-  }
-}
-
-.work__box:first-of-type {
-  margin-top: 0px;
-}
-
-@media screen and (max-width: 640px) {
-  .work__box:first-of-type {
-    margin-top: 0;
-  }
-}
-
 .work__box figure {
   position: relative;
   overflow: hidden;
@@ -4669,18 +4675,12 @@ a:hover, a:focus, a:active {
   right: 0;
   height: 100%;
   z-index: 10;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0.19)), to(#C4C4C4));
-  background: -o-linear-gradient(top, rgba(196, 196, 196, 0.19) 0%, #C4C4C4 100%);
-  background: linear-gradient(180deg, rgba(196, 196, 196, 0.19) 0%, #C4C4C4 100%);
   width: 100%;
   height: 100%;
 }
 
 .work__box figcaption {
-  position: absolute;
-  bottom: 21px;
-  left: 15px;
-  z-index: 10;
+  padding: 41px 36px;
 }
 
 .work__box img {
@@ -4688,6 +4688,15 @@ a:hover, a:focus, a:active {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   width: 100%;
+  max-width: 422px;
+}
+
+.work__box .btn {
+  font-size: 14px;
+  font-variant-caps: small-caps;
+  -webkit-transition: 350ms ease;
+  -o-transition: 350ms ease;
+  transition: 350ms ease;
 }
 
 .work__box a {
@@ -4735,7 +4744,7 @@ a:hover, a:focus, a:active {
 }
 
 .get-in-touch a:hover {
-  color: #252B2B;
+  color: #000940;
 }
 
 .testemonials {
@@ -4756,7 +4765,7 @@ a:hover, a:focus, a:active {
 
 .testemonials__blockquote {
   font-size: 24px;
-  font-family: CircularStd-Bold;
+  font-family: MaisonNeue-ExtendedBold;
   line-height: 32px;
   letter-spacing: -0.1px;
   max-width: 540px;
@@ -4837,6 +4846,10 @@ a:hover, a:focus, a:active {
   padding: 53px 0 226px;
 }
 
+.dolphin-app {
+  background-color: #EEF7FA;
+}
+
 .project-info {
   padding: 100px 0;
 }
@@ -4863,6 +4876,11 @@ a:hover, a:focus, a:active {
 
 .typography__title {
   margin-bottom: 16px;
+}
+
+.introduction {
+  padding-top: 136px;
+  padding-bottom: 250px;
 }
 
 .typography__preview {
@@ -4919,6 +4937,21 @@ a:hover, a:focus, a:active {
     border-radius: 100%;
     border: 6px solid white;
   }
+}
+
+.color-1--dolphin .color-border,
+.color-1--dolphin .color-body {
+  background: #2F6496;
+}
+
+.color-2--dolphin .color-border,
+.color-2--dolphin .color-body {
+  background: #58B1CF;
+}
+
+.color-3--dolphin .color-border,
+.color-3--dolphin .color-body {
+  background: #081138;
 }
 
 .overview__title {

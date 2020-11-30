@@ -28,6 +28,10 @@
 	background-size: cover;	
 }
 
+.banner-what-i-do--dolphin {
+	background-image: linear-gradient(180deg, rgba(246, 246, 246, 0.25) 0%, #EEF7FA 96.92%),  url('./assets/images/what-i-do.jpg');
+}
+
 .banner-my-work {
 	// background-image: url('./assets/images/get-in-touch.jpg');
 	background-image: linear-gradient(180deg, rgba(246, 246, 246, 0.25) 0%, #F6F6F6 96.92%),  url('./assets/images/my-work-bg.jpg');
