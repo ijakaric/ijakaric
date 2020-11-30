@@ -3180,7 +3180,7 @@ h1.display {
   font-size: -webkit-calc(46px + 10 * ( (100vw - 375px) / 1065));
   font-size: calc(46px + 10 * ( (100vw - 375px) / 1065));
   margin-bottom: 20px;
-  font-family: MaisonNeue-ExtendedBold;
+  font-family: Maison Neue Extended;
 }
 
 @media screen and (max-width: 375px) {
@@ -3196,7 +3196,7 @@ h1.display {
 }
 
 h2 {
-  font-family: MaisonNeue-ExtendedBold;
+  font-family: Maison Neue Extended;
   font-size: -webkit-calc(30px + 10 * ( (100vw - 375px) / 1065));
   font-size: calc(30px + 10 * ( (100vw - 375px) / 1065));
 }
@@ -3214,7 +3214,7 @@ h2 {
 }
 
 h3 {
-  font-family: MaisonNeue-ExtendedBold;
+  font-family: Maison Neue Extended;
   font-size: -webkit-calc(30px + -6 * ( (100vw - 375px) / 1065));
   font-size: calc(30px + -6 * ( (100vw - 375px) / 1065));
 }
@@ -3232,7 +3232,7 @@ h3 {
 }
 
 h4 {
-  font-family: MaisonNeue-ExtendedBold;
+  font-family: Maison Neue Extended;
   font-size: -webkit-calc(14px + 4 * ( (100vw - 375px) / 1065));
   font-size: calc(14px + 4 * ( (100vw - 375px) / 1065));
 }
@@ -4296,7 +4296,7 @@ a:hover, a:focus, a:active {
 
 .main-navigation li {
   line-height: 60px;
-  font-family: MaisonNeue-ExtendedBold;
+  font-family: Maison Neue Extended;
 }
 
 .main-navigation li:hover > a,
@@ -4311,7 +4311,7 @@ a:hover, a:focus, a:active {
   padding: 20px 15px;
   font-size: -webkit-calc(36px + 20 * ( (100vw - 375px) / 1065));
   font-size: calc(36px + 20 * ( (100vw - 375px) / 1065));
-  font-family: MaisonNeue-ExtendedBold;
+  font-family: Maison Neue Extended;
 }
 
 @media screen and (max-width: 375px) {
@@ -4765,7 +4765,7 @@ a:hover, a:focus, a:active {
 
 .testemonials__blockquote {
   font-size: 24px;
-  font-family: MaisonNeue-ExtendedBold;
+  font-family: Maison Neue Extended;
   line-height: 32px;
   letter-spacing: -0.1px;
   max-width: 540px;
