@@ -380,7 +380,7 @@ td {
   src: url("assets/icons/fonticons.woff2") format("woff2"), url("assets/icons/fonticons.woff") format("woff"), url("assets/icons/fonticons.ttf") format("truetype");
 }
 
-.font-arrow-back-ios:before, .font-arrow-forward-ios:before, .font-arrow-left-s-line:before, .font-arrow-left:before, .font-arrow-right-s-line:before, .font-arrow-right:before, .font-arrow:before, .font-behance:before, .font-close:before, .font-hamburger:before, .font-instagram:before, .font-keyboard-arrow-left:before, .font-keyboard-arrow-right:before, .font-linkedIn:before, .font-upwork:before {
+.font-arrow-back-ios:before, .font-arrow-forward-ios:before, .font-arrow-left-s-line:before, .font-arrow-left:before, .font-arrow-right-s-line:before, .font-arrow-right:before, .font-arrow:before, .font-behance:before, .font-close:before, .font-hamburger:before, .font-instagram:before, .font-keyboard-arrow-left:before, .font-keyboard-arrow-right:before, .font-linkedIn:before, .font-thumbs-up:before, .font-upwork:before {
   font-family: "fonticons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -447,8 +447,12 @@ td {
   content: "";
 }
 
-.font-upwork:before {
+.font-thumbs-up:before {
   content: "";
+}
+
+.font-upwork:before {
+  content: "";
 }
 
 /*--------------------------------------------------------------
@@ -582,6 +586,10 @@ td {
 .small-caps {
   font-variant-caps: small-caps;
   letter-spacing: 2px;
+}
+
+.mr-1 {
+  margin-right: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -3334,6 +3342,10 @@ main {
   margin: auto;
 }
 
+ul {
+  margin-bottom: 15px;
+}
+
 /*--------------------------------------------------------------
 ## Layout
 --------------------------------------------------------------*/
@@ -4076,6 +4088,10 @@ img {
 
 .socials--menu span {
   color: #000940;
+}
+
+.benefits li {
+  margin-bottom: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -4971,6 +4987,10 @@ a:hover, a:focus, a:active {
 .color-3--crypto .color-border,
 .color-3--crypto .color-body {
   background: #FBFBFC;
+}
+
+.conclusion {
+  padding: 60px 0 136px;
 }
 
 .overview__title {

@@ -64,8 +64,11 @@
 	@if $filename == linkedIn {
 		$char: "\E00E";
 	}
-	@if $filename == upwork {
+	@if $filename == thumbs-up {
 		$char: "\E00F";
+	}
+	@if $filename == upwork {
+		$char: "\E010";
 	}
 
 	@return $char;
@@ -123,6 +126,9 @@
 }
 .font-linkedIn {
 	@include font(linkedIn);
+}
+.font-thumbs-up {
+	@include font(thumbs-up);
 }
 .font-upwork {
 	@include font(upwork);
