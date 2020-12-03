@@ -129,8 +129,9 @@
 }
 .font-thumbs-up {
 	@include font(thumbs-up);
+	font-size: 11px;
 }
 .font-upwork {
 	@include font(upwork);
 }
-
+

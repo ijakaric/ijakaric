@@ -447,6 +447,10 @@ td {
   content: "";
 }
 
+.font-thumbs-up {
+  font-size: 11px;
+}
+
 .font-thumbs-up:before {
   content: "";
 }
@@ -4991,6 +4995,10 @@ a:hover, a:focus, a:active {
 
 .conclusion {
   padding: 60px 0 136px;
+}
+
+.project-logo {
+  max-width: 170px;
 }
 
 .overview__title {
