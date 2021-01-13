@@ -1,3 +1,4 @@
-RewriteEngine On
-RewriteCond %{REQUEST_URI} !^/dist
-RewriteRule ^(.*)$ dist/$1
+RewriteEngine on
+RewriteBase /
+RewriteCond %{HTTP_HOST} ijakaric.design [NC]
+RewriteRule ^(.*)$ http://www.ijakaric.design/dist/index.html [R=301,NC]
