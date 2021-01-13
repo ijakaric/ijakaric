@@ -1,0 +1,106 @@
+.dolphin-app {
+    background-color: #EEF7FA;    
+}
+
+.project-info {
+    padding: 100px 0;
+}
+.design {
+    padding: 74px 0;
+}
+.design__text {
+    max-width: 500px;
+}
+.development {
+    padding: 74px 0;
+}
+.development__text {
+    max-width: 500px;
+}
+.typography {
+    padding: 100px 0;
+}
+.typography__title {
+    margin-bottom: 16px;
+}
+
+.introduction {
+    padding-top: 136px;
+    padding-bottom: 120px;
+}
+
+.typography__preview {
+    padding: 91px 15px 41px;
+}
+
+.color-section {
+    padding-bottom: 130px;
+}
+
+.color__title {
+    margin-bottom: 74px;
+}
+.color-border {
+    background: $dark-gray;
+    border-radius: 100%;
+    width: 201px;
+    height: 201px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq($phone) {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.color-body {
+    width: 177px;
+    height: 177px;
+    background: $dark-gray;
+    border-radius: 100%;
+    border: 12px solid white;
+
+    @include mq($phone) {
+        width: 80px;
+        height: 80px;
+        background: #939393;
+        border-radius: 100%;
+        border: 6px solid white;
+    }
+}
+
+.color-1--dolphin .color-border,
+.color-1--dolphin .color-body {
+    background: #2F6496;
+}
+.color-2--dolphin .color-border,
+.color-2--dolphin .color-body {
+    background: #58B1CF;
+}
+.color-3--dolphin .color-border,
+.color-3--dolphin .color-body {
+    background: #081138;
+}
+
+.color-1--crypto .color-border,
+.color-1--crypto .color-body {
+    background: #40C95A;
+}
+.color-2--crypto .color-border,
+.color-2--crypto .color-body {
+    background: #0A0B0F;
+}
+.color-3--crypto .color-border,
+.color-3--crypto .color-body {
+    background: #FBFBFC;
+}
+
+.conclusion {
+    padding: 60px 0 136px;
+}
+
+.project-logo {
+    max-width: 170px;
+}

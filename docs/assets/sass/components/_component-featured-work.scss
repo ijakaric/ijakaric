@@ -1,0 +1,138 @@
+.featured-works {
+    padding-bottom: 144px;
+    @include mq($phone) {
+        padding-bottom: 110px;
+    }
+}
+.featured-works__title {
+    margin-top: 9px;
+    margin-bottom: 25px;
+    @include mq($phone) {
+        margin-bottom: 15px;
+    }
+}
+
+.featured-works__text {
+    max-width: 469px;
+    margin-bottom: 36px;
+}
+.work {
+    padding: 0 15px;
+    @include mq($phone) {
+        margin-bottom: 65px;
+    }
+
+}
+
+
+.work__box {
+    background-color: #f6f4fa;
+    padding: 0;
+    // background: linear-gradient(180deg, rgba(196, 196, 196, 0.19) 0%, #C4C4C4 100%);
+    // max-width: 297px;
+    margin-bottom: 30px;
+    height: 360px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+
+    &:hover {
+        .btn {
+            text-decoration: underline;
+        }
+
+        img {
+            transform:scale(1.1);
+        }
+    }
+    
+
+
+    @include mq($phone) {
+        max-width: 100%;
+        margin-bottom: 25px;
+        height: 345px;
+    }
+
+    // &:nth-of-type(odd) {
+    //     margin-top: -95px;
+    //     @include mq($phone) {
+    //         margin-top: 0;
+    //     }
+    // }
+    
+
+    // &:nth-of-type(2) {
+    //     margin-top: 95px;
+    //     @include mq($phone) {
+    //         margin-top: 0;
+    //     }
+    // }
+
+    // &:first-of-type {
+    //     margin-top: 0px;
+    //     @include mq($phone) {
+    //         margin-top: 0;
+    //     }
+    // }
+    
+    figure {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            z-index: 10;
+            // background: linear-gradient(180deg, rgba(196, 196, 196, 0.19) 0%, #C4C4C4 100%);
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    figcaption {
+        padding: 41px 36px;
+        // position: absolute;
+        // bottom: 21px;
+        // left: 15px;
+        // z-index: 10;
+    }
+
+    img {
+        transition:all .2s ease-in-out;
+        width: 100%;
+        max-width: 422px;
+    }
+
+    .btn {
+        font-size: 14px;
+        font-variant-caps: small-caps;
+        transition: $dur $ease;
+    }
+}
+
+// .work__box--dolphin {
+//     background-image: linear-gradient(180deg, rgba(196, 196, 196, 0.19) 0%, #C4C4C4 100%);
+// }
+
+.work__box--crypto {
+    background-color: #FBFBFC;
+}
+
+.work__box a {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 32px;
+}
+
+.work__type {
+    margin-bottom: 56px;
+
+    @include mq($phone) {
+        font-size: 16px;
+    }
+}

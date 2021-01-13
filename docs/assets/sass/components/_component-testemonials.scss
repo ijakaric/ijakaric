@@ -1,0 +1,40 @@
+.testemonials {
+    padding: 150px 0;
+
+    @include mq($phone) {
+        padding: 75px 0 140px;
+    }
+}
+
+.testemonials__image {
+    display: block;
+    margin: auto;
+    margin-bottom: 36px;
+}
+
+.testemonials__blockquote {
+    font-size: 24px;
+    font-family: $font-title;
+    line-height: 32px;
+    letter-spacing: -0.1px;
+    max-width: 540px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.slick-prev,
+.slick-next {
+    @include center(y);
+}
+
+.slick-next {
+    right: 60px;
+}
+
+.slick-list {
+    outline: none;
+}
+
+.slick-slide:focus { outline: none; }
+
