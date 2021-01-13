@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+## Variables
+--------------------------------------------------------------*/
+// Fonts
+$font-default-serif: CircularStd-Medium;
+$font-default-sans-serif: Aeonik;
+
+$font-main: $font-default-sans-serif;
+$font-title: Maison Neue Extended;
+$font-medium: CircularStd-Medium;
+
+// Colors
+$white: #fff;
+$black: #000940;
+$gray: #F6F6F6;
+$dark-gray: #939393;
+$blue: #0023F9;
+
+
+$c-text: $dark-gray;
+
+
+$color-main: $blue;
+// Transitions
+$dur: 350ms;
+$ease: ease;
+
+// Breakpoints
+$phone: 640;
+$tablet: 991;
+$tablet-l: 1199;
+$lap-small: 1250;
+$lap-large: 1400;
+

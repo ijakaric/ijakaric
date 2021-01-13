@@ -1,0 +1,48 @@
+/*--------------------------------------------------------------
+## Forms
+--------------------------------------------------------------*/
+
+.form-group {
+    margin-bottom: 16px;
+    flex: 0 50%;
+    
+    &:first-of-type{
+        margin-right: 16px;
+        @include mq($phone) {
+            margin-right: 0;
+        }
+    }
+
+    @include mq($phone) {
+        flex: 0 100%;
+    }
+}
+
+.form-row {
+    flex-wrap: wrap;
+}
+.form-control,
+.custom-select {
+    background: rgba(1, 1, 1, 0.04);
+    border: none;
+    padding: 12px;
+    
+}
+
+.custom-select {
+    height: 48px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+}
+
+::placeholder,
+.custom-select {
+    color: rgba($black, 0.5);
+    font-size: 16px;
+    line-height: 24px;
+}

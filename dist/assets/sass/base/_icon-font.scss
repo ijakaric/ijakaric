@@ -1,0 +1,136 @@
+@font-face {
+	font-family: "fonticons";
+	src: url('./assets/icons/fonticons.woff2') format('woff2'), url('./assets/icons/fonticons.woff') format('woff'), url('./assets/icons/fonticons.ttf') format('truetype');;
+}
+
+@mixin font-styles {
+	font-family: "fonticons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%font {
+	@include font-styles;
+}
+
+@function font-char($filename) {
+	$char: "";
+
+	@if $filename == arrow-back-ios {
+		$char: "\E001";
+	}
+	@if $filename == arrow-forward-ios {
+		$char: "\E002";
+	}
+	@if $filename == arrow-left-s-line {
+		$char: "\E003";
+	}
+	@if $filename == arrow-left {
+		$char: "\E004";
+	}
+	@if $filename == arrow-right-s-line {
+		$char: "\E005";
+	}
+	@if $filename == arrow-right {
+		$char: "\E006";
+	}
+	@if $filename == arrow {
+		$char: "\E007";
+	}
+	@if $filename == behance {
+		$char: "\E008";
+	}
+	@if $filename == close {
+		$char: "\E009";
+	}
+	@if $filename == hamburger {
+		$char: "\E00A";
+	}
+	@if $filename == instagram {
+		$char: "\E00B";
+	}
+	@if $filename == keyboard-arrow-left {
+		$char: "\E00C";
+	}
+	@if $filename == keyboard-arrow-right {
+		$char: "\E00D";
+	}
+	@if $filename == linkedIn {
+		$char: "\E00E";
+	}
+	@if $filename == thumbs-up {
+		$char: "\E00F";
+	}
+	@if $filename == upwork {
+		$char: "\E010";
+	}
+
+	@return $char;
+}
+
+@mixin font($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %font;
+		} @else {
+			@include font-styles;
+		}
+		content: font-char($filename);
+	}
+}
+
+.font-arrow-back-ios {
+	@include font(arrow-back-ios);
+}
+.font-arrow-forward-ios {
+	@include font(arrow-forward-ios);
+}
+.font-arrow-left-s-line {
+	@include font(arrow-left-s-line);
+}
+.font-arrow-left {
+	@include font(arrow-left);
+}
+.font-arrow-right-s-line {
+	@include font(arrow-right-s-line);
+}
+.font-arrow-right {
+	@include font(arrow-right);
+}
+.font-arrow {
+	@include font(arrow);
+}
+.font-behance {
+	@include font(behance);
+}
+.font-close {
+	@include font(close);
+}
+.font-hamburger {
+	@include font(hamburger);
+}
+.font-instagram {
+	@include font(instagram);
+}
+.font-keyboard-arrow-left {
+	@include font(keyboard-arrow-left);
+}
+.font-keyboard-arrow-right {
+	@include font(keyboard-arrow-right);
+}
+.font-linkedIn {
+	@include font(linkedIn);
+}
+.font-thumbs-up {
+	@include font(thumbs-up);
+}
+.font-upwork {
+	@include font(upwork);
+}
+

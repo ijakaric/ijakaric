@@ -1,3 +1,6 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^ijakaric.design$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^ijakaric.design$
+RewriteCond %{REQUEST_URI} !dist/
+RewriteRule (.*) /dist/$1 [L]
