@@ -1,2 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^ijakaric.design$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.ijakaric.design$
 RewriteCond %{REQUEST_URI} !dist/
 RewriteRule (.*) /dist/$1 [L]
