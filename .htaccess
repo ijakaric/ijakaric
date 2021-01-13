@@ -1,9 +1,0 @@
-RewriteEngine on
-#if a match for asset is found, do nothing
-RewriteRule ^assets/ - [L]
-
-RewriteCond %{THE_REQUEST} dist/
-RewriteRule ^dist/(.*) http://ijakaric.design/$1 [R=301,L]
-
-RewriteCond %{REQUEST_URI} !dist/
-RewriteRule ^(.*)$ /dist/$1 [L]
