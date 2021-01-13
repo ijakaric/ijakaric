@@ -1,4 +1,2 @@
-RewriteEngine On
+DocumentRoot /dist/
 
-RewriteCond %{REQUEST_URI} !^/dist/
-RewriteRule ^(.*)$ /dist/$1 [L,R=301]
