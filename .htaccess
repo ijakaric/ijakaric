@@ -1,7 +1,8 @@
-#  Add directives
-RewriteEngine on
-
-#  Change root directory to "dist" folder
-RewriteCond %{THE_REQUEST} ^GET\ /dist/
-RewriteRule ^dist/(.*) /$1 [L,R=301]
-RewriteRule !^dist/ dist%{REQUEST_URI} [L]
+Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !dist/
+    RewriteRule (.*) /dist/$1 [L]
+    # http://localhost/example.com
+    # RewriteRule (.*) /example.com/dist/$1 [L]
+</IfModule>
