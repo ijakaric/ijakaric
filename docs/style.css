@@ -4010,7 +4010,7 @@ img {
 }
 
 .list__item {
-  font-family: CircularStd-Medium;
+  font-family: Maison Neue Extended;
   letter-spacing: 0.1px;
   line-height: 24px;
   margin-bottom: 15px;
@@ -4765,6 +4765,27 @@ a:hover, a:focus, a:active {
 
 .get-in-touch a:hover {
   color: #000940;
+}
+
+.display-mail {
+  font-size: -webkit-calc(46px + 10 * ( (100vw - 375px) / 1065));
+  font-size: calc(46px + 10 * ( (100vw - 375px) / 1065));
+  margin-bottom: 20px;
+  font-family: Maison Neue Extended;
+  text-decoration: underline;
+  color: #000940;
+}
+
+@media screen and (max-width: 375px) {
+  .display-mail {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .display-mail {
+    font-size: 56px;
+  }
 }
 
 .testemonials {

@@ -5,3 +5,11 @@
 .get-in-touch a:hover {
     color: $black;
 }
+
+.display-mail {
+    @include fluid-type(46px, 56px, 375px, 1440px);
+	margin-bottom: 20px;
+    font-family: $font-medium;
+    text-decoration: underline;
+    color: $black;
+}
