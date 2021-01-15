@@ -3346,6 +3346,26 @@ ul {
   margin-bottom: 15px;
 }
 
+#page-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000940;
+  z-index: 100500;
+}
+
+#page-preloader .spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 /*--------------------------------------------------------------
 ## Layout
 --------------------------------------------------------------*/
