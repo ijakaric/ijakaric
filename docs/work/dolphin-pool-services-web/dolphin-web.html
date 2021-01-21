@@ -2,15 +2,24 @@
 <html lang="en">
 
 <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BXEPRQ8MRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BXEPRQ8MRT');
-</script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MC34W6N');
+    </script>
+    <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,9 +54,9 @@
 
 </head>
 <body>
-    <!-- Google Tag Manager (noscript)s -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC34W6N" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBKC3LD" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header class="site-header">
         <div class="container-fluid">
@@ -62,7 +71,7 @@
                         const bleep = new Audio();
                         bleep.src = '../../assets/sounds/click_09.ogg';
                     </script>
-                    <a href="#" class="menu-btn js-menu-btn">
+                    <a href="#" class="d-bock d-md-none menu-btn js-menu-btn">
                         <span></span>
                     </a><!-- menu-button -->
     
@@ -75,14 +84,14 @@
                     <nav id="site-navigation" class="main-navigation js-main-nav d-flex align-items-center">
                         <div class="container">
                             <div class="row">
-                                <ul id="primary-menu" class="col-12 col-md-6 d-flex flex-column primary-menu clear">
+                                <ul id="primary-menu" class="d-flex flex-column flex-md-row primary-menu clear">
                                     <li class="menu-item"><a href="../../what-i-do.html">WHAT I DO</a></li>
                                     <li class="menu-item "><a href="../../my-work.html">MY WORK</a></li>
                                     <li class="menu-item "><a href="../../get-in-touch.html">GET IN TOUCH</a></li>
                                     <li class="menu-item "><a terget="_blank" href="../../assets/Resume.pdf">RESUME</a></li>
                                 </ul>
     
-                                <div class="col-12 col-sm-6">
+                                <div class="col-12 col-sm-6 d-none">
                                     <address class="d-none d-sm-flex flex-column justify-content-end">
                                         <b>Office:</b><br>
                                         <a href="https://goo.gl/maps/js6ffQu57e98uz3T9" target="_blank">Novi Sad,
